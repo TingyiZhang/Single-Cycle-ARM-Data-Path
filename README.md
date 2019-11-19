@@ -2,17 +2,18 @@
 A design of simplifide ARM-like CPU.
 
 It support the following instructions:
-|Instruction|Opcode|
-|--|--|
-|BRANCH|11'h0A0|
-|AND|11'h450|
-|ADD|11'h458|
-|ORR|11'h550|
-|CBNZ|11'h5A0|
-|SUB|11'h658|
-|MOVK|11'h794|
-|STUR|11'h7C0|
-|LDUR|11'h7C2|
+
+Instruction|Opcode
+----|----
+BRANCH|11'h0A0
+AND|11'h450
+ADD|11'h458
+ORR|11'h550
+CBNZ|11'h5A0
+SUB|11'h658
+MOVK|11'h794
+STUR|11'h7C0
+LDUR|11'h7C2
 
 ## Components
 ### ALU
