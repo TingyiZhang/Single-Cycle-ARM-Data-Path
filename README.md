@@ -1,7 +1,7 @@
 # Single-Cycle-ARM-Data-Path
 A design of simplifide ARM-like CPU.
 
-It support the following instructions:
+It supports the following instructions:
 
 Instruction|Opcode
 ----|----
@@ -20,16 +20,17 @@ LDUR|11'h7C2
 - Inputs: Registers or DRAddress(depends on ALU mux)
 - Outputs: Results and a zero flag(it sets to 1 when the result is not zero in this design).
 - Opcode:
-```
-0. AND
-1. OR
-2. NOT
-3. MOVA(pass the first output directly to the result)
-4. MOVB(pass the second output directly to the result)
-5. ADD
-6. SUBSTRACT
-7. An Operation designed for MOVK instruction
-```
+
+Opcode|Operation
+0 | AND
+1 | OR
+2 | NOT
+3 | MOVA
+4 | MOVB
+5 | ADD
+6 | SUBSTRACT
+7 | MOVK
+
 ### ALU mux
 - Decide the second input of ALU is a register or DTAddress
 
