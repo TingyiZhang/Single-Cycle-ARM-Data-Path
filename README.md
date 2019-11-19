@@ -71,4 +71,5 @@ An unified unit of control unit and ALU control unit.
 - In my instruction memory, the programm is load the first 6 numbers of Fibonacci array into data memory.
 
 ## Final design diagram
+<img src = "https://github.com/TingyiZhang/Single-Cycle-ARM-Data-Path/blob/master/FinalDesign.png">
 
