@@ -22,6 +22,7 @@ LDUR|11'h7C2
 - Opcode:
 
 Opcode|Operation
+----|----
 0 | AND
 1 | OR
 2 | NOT
