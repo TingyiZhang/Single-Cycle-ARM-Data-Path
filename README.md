@@ -73,3 +73,8 @@ An unified unit of control unit and ALU control unit.
 ## Final design diagram
 <img src = "https://github.com/TingyiZhang/Single-Cycle-ARM-Data-Path/blob/master/FinalDesign.png">
 
+## Testing
+The instructions in the instruction memory is loading the first 6 fibonacci numbers into data menmory.
+
+Wavefrom:
+
