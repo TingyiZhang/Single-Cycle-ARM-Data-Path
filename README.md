@@ -1,5 +1,5 @@
 # Single-Cycle-ARM-Data-Path
-A design of simplifide ARM-like CPU.
+A design of simplified ARM-like CPU.
 
 It supports the following instructions:
 
