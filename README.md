@@ -74,7 +74,28 @@ An unified unit of control unit and ALU control unit.
 <img src = "https://github.com/TingyiZhang/Single-Cycle-ARM-Data-Path/blob/master/FinalDesign.png">
 
 ## Testing
-The instructions in the instruction memory is loading the first 6 fibonacci numbers into data menmory.
+The instructions in the instruction memory is loading the first 6 fibonacci numbers into data menmory. This program is modified a little bit to run on this data path, since the difference of the address of two data is only 1 not 4.
+
+The initial value of each register is its number, for example X0 is 0 and X5 is 5.
+
+This is the program looks like in assembly:
+```
+STUR XZR, [X0, 0]
+STUR X1, [X0, 1]
+MOVK X30, 6
+START:
+SUBL X3, X2, X30
+CBNZ X3, LOOP
+END:
+B 0
+LOOP:
+LDUR X4, [X2, -1]
+LDUR X5, [X2, -2]
+ADD X6, X4, X5
+STUR X6, [X2, 0]
+ADD X2, X2, X1
+B START
+```
 
 Wavefrom:
 <img src = "https://github.com/TingyiZhang/Single-Cycle-ARM-Data-Path/blob/master/Test.png">
